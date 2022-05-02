@@ -44,13 +44,45 @@ input{
 }
 
 #sidebar{
+    display:grid;
+    grid-template-rows: 2fr repeat(5,1fr) 2fr repeat(3,1fr) 30%;
     background-color: lightblue;
     grid-row:1/-1;
     grid-column:1/2;
 }
 
+
+.sideBarSection{
+}
+
+.sideBarText{
+    margin:0;
+}
+
 #mainContent{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
     background-color: pink;
     grid-row:2/-1;
     grid-column:2/3;
+}
+
+#cardSection{
+    border:solid black 1px;
+}
+
+#infoSection{
+    border:solid black 1px;
+}
+
+#cardContainer{
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+.card{
+    border:blue solid 1px;
 }
