@@ -11,6 +11,11 @@ input{
     border:none;
 }
 
+.titleText{
+    margin-left:0;
+    margin-right:0;
+}
+
 #container{
     display:grid;
     height:100vh;
@@ -69,14 +74,11 @@ input{
 }
 
 #cardSection{
-    border:solid black 1px;
 }
 
-#infoSection{
-    border:solid black 1px;
-}
 
 #cardContainer{
+    height:90%;
     display:grid;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: 1fr 1fr;
@@ -85,4 +87,27 @@ input{
 
 .card{
     border:blue solid 1px;
+}
+
+#infoSection{
+    display:grid;
+    grid-template-rows:1fr 1fr 30%;
+    row-gap:20px;
+}
+
+.infoContainer{
+    background-color: lightblue;
+    display:grid;
+    grid-template-rows:1fr repeat(3,2fr);
+}
+
+.infoCard{
+    background-color: white;
+    height:auto;
+}
+
+.infoCard1{
+}
+
+.infoCard2{
 }
