@@ -6,6 +6,8 @@ html{
     --sideBarColor:#0AA1DD;
     --cardColor:white;
     --bgColor: rgb(221, 228, 230);
+    --btnSize:80px;
+    --iconSize:30px
 }
 
 body{
@@ -25,6 +27,16 @@ input{
 .pfp{
     width:40px;
     height:40px;
+}
+
+.postBtn{
+    background-color: var(--sideBarColor);
+    width:var(--btnSize);
+    height:30px;
+    border:none;
+    border-radius: 2rem;
+    color:white;
+    font-weight:bold;
 }
 
 #mainPfp{
@@ -47,6 +59,9 @@ input{
     background-color:var(--cardColor) ;
     grid-row:1/2;
     grid-column:2/-1;
+    box-shadow:  5px 0px 5px black;
+    z-index:2;
+
 }
 
 #searchBarSection{
@@ -64,6 +79,45 @@ input{
     border-radius: 2rem;;
 }
 
+#topRightHeader{
+    margin-top:10px;
+    display:grid;
+    grid-template-columns:  repeat(2,60px)  120px;
+}
+
+#bellIcon{
+    margin-top:10px;
+}
+
+#userName{
+    margin-left:20px;
+}
+
+#bottomLeftHeader{
+    display:grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+}
+
+#mainPfp{
+    grid-row:1/-1;
+}
+
+#greetWord{
+    margin:10px 0 10px 0 ;
+}
+
+#mainUserName{
+    margin:0;
+    font-size: 1.5rem;
+}
+
+#bottomRightHeader{
+    display:grid;
+    grid-template-columns: repeat(3,calc(var(--btnSize)*1.5));
+    align-items: center;
+}
+
 #sidebar{
     display:grid;
     grid-template-rows: 2fr repeat(5,1fr) 2fr repeat(3,1fr) 30%;
@@ -72,12 +126,32 @@ input{
     grid-column:1/2;
 }
 
-
 .sideBarSection{
+    display:grid;
+    grid-template-columns: calc(var(--iconSize) + 10px) 1fr;
+}
+.sideBarSection.logoSection{
+    grid-template-columns: 70px 1fr;
+}
+
+#logo{
+    width:60px;
+    height:60px;
+}
+
+#logoText{
+    font-size:2rem;
 }
 
 .sideBarText{
-    margin:0;
+    margin:10px 0 0 0;
+    color:white;
+    font-weight:bold;
+}
+
+.sideBarIcon{
+    width:var(--iconSize);
+    height:var(--iconSize);
 }
 
 #mainContent{
