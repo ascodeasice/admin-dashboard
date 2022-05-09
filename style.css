@@ -20,7 +20,7 @@ input{
 }
 
 .titleText{
-    margin-left:0;
+    margin-left:10px;
     margin-right:0;
 }
 
@@ -128,7 +128,7 @@ input{
 
 .sideBarSection{
     display:grid;
-    grid-template-columns: calc(var(--iconSize) + 10px) 1fr;
+    grid-template-columns: calc(var(--iconSize) + 20px) 1fr;
 }
 .sideBarSection.logoSection{
     grid-template-columns: 70px 1fr;
@@ -150,6 +150,7 @@ input{
 }
 
 .sideBarIcon{
+    margin-left:10px;
     width:var(--iconSize);
     height:var(--iconSize);
 }
@@ -166,7 +167,6 @@ input{
 #cardSection{
 }
 
-
 #cardContainer{
     height:90%;
     display:grid;
@@ -176,8 +176,39 @@ input{
 }
 
 .card{
-    border:blue solid 1px;
+    border-radius:1rem;
     background-color: var(--cardColor);
+    display:grid;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: 1fr;
+    border-left:10px solid gold;
+    margin-left:10px;
+    overflow:auto;
+}
+
+.contentText{
+    margin-left:10px;
+    font-family:sans-serif;
+}
+
+.cardHeader{
+    margin-left:10px;
+}
+
+.cardImageWrapper{
+    display:grid;
+    grid-template-columns: repeat(3,min-content);
+    justify-self: flex-end;
+    justify-content:flex-end; 
+    align-items:flex-end;
+}
+
+.cardIcon{
+    width:20px;
+    height:20px;
+    margin-left:5px;
+    margin-right:20px;
+    margin-bottom:10px;
 }
 
 #infoSection{
@@ -194,11 +225,24 @@ input{
 
 .infoCard{
     background-color: var(--cardColor);
+    border-bottom:solid 2px var(--bgColor);
     height:auto;
+    border-radius:1rem;
 }
 
-.infoCard1{
+#trendContainer{
+    display:grid;
+    grid-template-rows: min-content repeat(4,1fr);
 }
 
-.infoCard2{
+.trendCard{
+    display:grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+}
+
+.trendPfp{
+    grid-row:1/-1;
+    margin-top:5px;
+    margin-left:5px;
 }
