@@ -1,5 +1,8 @@
 # admin-dashboard
-A project from the Odin Project, mainly for practicing grid css.
+A project for practicing grid in css.
 
-result:
+# Result
 ![picture of result](https://github.com/ascodeasice/admin-dashboard/blob/main/images/result.png)
+
+# Link
+[Live preview](https://ascodeasice.github.io/admin-dashboard/)
